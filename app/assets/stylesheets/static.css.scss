@@ -1,0 +1,187 @@
+@import url('reset.css');
+body {
+	font-family: 'Droid Serif', Arial, serif;
+	color: #c7c3bf;
+	line-height: 1.2em;
+	text-align: center;
+	background-color: #96a4a5;
+	margin:0;
+	padding:0;
+	height:100%;
+	width: 100%;
+}
+
+	/*Header*/
+
+.mast {
+	width:100%;
+	height:170px;
+	display:block;
+	background: #96a4a5 url("../images/oregon-coast.jpg") no-repeat right top;
+	background-size: 100% 100%;
+	border-bottom:3px solid #2e251c;
+}
+.sail{
+	height:100 px;
+	float:left;
+}
+.sail p {
+	font-family: 'Stalemate', cursive;
+	font-size: 80px;
+	color: #2e251c;
+	line-height: 150px;
+	font-weight: 500;
+}
+.round {
+	width: 140px;
+	height: 190px;
+	/*background: #b2bcc4;*/
+	overflow: hidden;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+	border: 3px solid #2e251c;
+  float:left;
+	margin:10px 15px 10px 15px;
+	z-index: 2;
+}
+.round img {
+  min-width: 100%;
+  min-height: 100%;
+  border-style: none;
+  margin:5px 0 0 0;
+}
+
+/*Main body*/
+
+.freeboard{
+	background:#96a4a5;
+	width:100%;
+	position: relative;
+}
+
+/*Polaroid fan-out*/
+
+div.cardfan { 
+  height: 325px; 
+  width: 200px; 
+  margin: 40px 0 5px 0;
+  position: relative;
+  display: block; 
+  float:left;
+}
+div.cardfan img { 
+box-sizing: border-box; 
+width: 240px; 
+height: 290px;
+display: block; 
+margin: 10px 10px;
+padding: 15px 15px 60px 15px;
+background: #f9f8f2; 
+border: 1px solid black;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+left: -120px;
+transform-origin: center center; 
+transition: all .6s linear;
+position: absolute; 
+}
+div.cardfan img:first-child { 
+  transform: rotate(5deg);  
+}
+div.cardfan img:last-child { 
+  transform: rotate(-5deg); 
+}
+div.cardfan:hover img:first-child { 
+  transform: translate(550px); 
+}
+div.cardfan:hover img:last-child { 
+  transform: translate(275px);  
+}
+/*Skills and Knowledge*/
+div.skill-box{
+	float:right;
+	height: 300px;
+	width: 390px;
+	margin: 5px;
+	color:#2e251c;
+	text-align: left;
+	line-height: 2em;
+}
+ul.skill-box {
+    display: block;
+    list-style-type:disc;
+    margin-top:90px;
+    margin-bottom: 0em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0px;
+}
+/*hover caption*/
+div.caption1, div.caption2, div.caption3{
+	width: 225px;
+	height: 30px;
+	background-color: none;
+	position:absolute;
+	top:282px;
+	left:73px;
+	padding: 0;
+	visibility:visible;
+	transition: visibility 1s;
+	transition-delay:10s;	
+}
+div.caption2{
+	left:350px;
+}
+div.caption3{
+	left:620px;
+}
+p.caption1{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: black;
+	font-size: 16px;
+	float: none;
+	width:225px;
+	margin:0;
+	text-align: center;
+	visibility: hidden;
+	transition: visibility .1s;
+	transition-delay:.7s;
+}
+div.freeboard:hover p.caption1 {
+	visibility:visible;
+} 
+ 
+/*Foot*/
+
+.keel {
+	background: #96A4A5 url("../images/rocks.jpeg") repeat;
+	width: 100%;
+	height: 55px;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	border-top:3px solid #2e251c;
+	border-bottom:3px solid #2e251c;
+	display:block;
+}
+/* Social media icons */
+
+.social { 
+	float: right; 
+	margin:5px 20px 5px 5px; 
+}
+.social ul { 
+	padding:0;
+}
+.social li {
+	float:right; 
+	list-style:inline; 
+	list-style-position: bottom;
+}
+.social img {
+	width:45px; 
+	height:45px;	
+}
+
