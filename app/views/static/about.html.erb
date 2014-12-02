@@ -1,7 +1,7 @@
 
 	<div class="mast">
 		<div class="round">
-			<image_tag("selfie.png", class: "round")
+			<%= image_tag("selfie.png", class: "round") %>
 		</div>
 	 	<div class="sail">
 	 		<p>Amanda Walter</p>
@@ -11,9 +11,9 @@
 <!-- image_tag("/icons/icon.gif", class: "menu_icon") -->
 	<div class="freeboard">
 		<div class="cardfan">
-  		<img src='../images/Bryant_reading.jpg' title="Bryant reading!" class="polaroid" id="knowledge"/>
-  		<img src='../images/running.jpg' class="polaroid" id="interests"/>
-  		<img src='../images/coastie.jpg' class="polaroid" id="skills"/>
+  		<%= image_tag("Bryant_reading.jpg", class: "polaroid") %>
+  		<%= image_tag("running.jpg", class: "polaroid") %>
+  		<%= image_tag("coastie.jpg", class: "polaroid") %>
 		</div>
 		<div class="caption1">
 			<p class="caption1">This is me, running my first Ragnar!</p>
@@ -25,9 +25,7 @@
 				<p class="caption1">Helping me study!</p>
 		</div>
 	</div>
-<% view_test = 'View test' %>
-
-	<%= console %>	
+	
 	<!--<div id="page-wrap">
   <div class="meter">
       <span style="width: 25%"></span>
@@ -61,16 +59,16 @@
 	<div class="keel">
 			<ul class="social">
 				<li><a href="http://www.facebook.com/AmandaNicholeWalter" target="_blank">
-        	<img src='../icons/Facebook-hover.png' />
+        	<%= image_tag("Facebook-hover.png")%>
     		</a></li>
 				<li><a href="https://twitter.com/AmandaWalter789" target="_blank">
-    			<img src='../images/Twitter-hover.png' />
+    			<%= image_tag("Twitter-hover.png")%>
 				</a></li>
 				<li><a href="http://www.pinterest.com/AmandaWalter789/" target="_blank">
-    			<img src='images/Pinterest-hover.png' />
+    			<%= image_tag("Pinterest-hover.png")%>
 				</a></li>
 				<li><a href="https://github.com/AmandaWalter" target="_blank">
-        	<img src='includes/icons/github.png' />
+        	<%= image_tag("github-hover.png")%>
     		</a></li>
 			</ul>
 	</div>
